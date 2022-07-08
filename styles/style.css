@@ -173,7 +173,10 @@ button {
   color: #ffffff;
 }
 /* section 2 end */
-
+.block-1 .container h5,
+.block-2 .container h5,
+.block-3 .container h5 {
+    font-size: 16px;
 /* Адаптивка старт*/
 /* burger start */
 #burger,
