@@ -1,11 +1,17 @@
-/* Bekmyrza start */
-@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
   font-family: "Poppins", sans-serif;
 }
+html {
+    font-size: 16px;
+}
+/* Bekmyrza start */
+
+
 /* header start */
 .container {
   width: 90%;
@@ -431,3 +437,141 @@ text-align: center;
 }
 /* Адаптивка конец */
 /* Bekmyrza end */
+
+.block-6,
+.block-7 {
+    font-family: 'Poppins', sans-serif;
+    color: #22343D;
+}
+.block-6 {
+    background: no-repeat top / 100% auto url("../assets/img/Bg_half-circle.png");
+    text-align: center;
+}
+.block-7 {
+    text-align: left;
+}
+.container {
+    width: 90%;
+    max-width: 1100px;
+    margin: 0px auto;
+    padding: 10px;
+}
+.block-6__header,
+.block-7__header {
+    font-size: 2rem;
+    padding: 50px 0px 16px;
+    font-weight: 700;
+}
+.block-6__sub-header,
+.block-7__sub-header {
+    white-space: pre-line;
+    line-height: 26px;
+    font-weight: 500;
+}
+.block-6_comments {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding-bottom: 24px;
+    padding-top: 32px;
+}
+.block-6__comment {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.block-6__comment_avatar img {
+    width: 95px;
+    height: 95px;
+    margin: 0px 16px;
+}
+
+.block-6__comment_text {
+    padding: 15px 25px;
+    background-color: #FFF;
+    border-radius: 30px;
+    box-shadow: 0px 4px 8px #5675927d;
+}
+
+.block-6__contact-button {
+    line-height: 24px;
+    padding: 15px 30px;
+    font-weight: 700;
+    color: #FFF;
+    background-color: #02897A;
+    border-radius: 4px;
+    text-decoration: none;
+    margin-top: 48px;
+    display: inline-block;
+}
+
+/* Block 7 */
+.block-7__cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 32px 0px 50px;
+}
+/*  */
+#first-card,
+#second-card,
+#third-card {
+    display: none;
+}
+.switcher-card {
+    display: flex;
+    justify-content: center;
+}
+.switcher-card label {
+    margin: 10px;
+    width: 20px;
+    height: 20px;
+    display: block;
+    border-radius: 100%;
+    background-color: #979797;
+}
+#first-card:checked ~ .switcher-card .first-label,
+#second-card:checked ~ .switcher-card .second-label,
+#third-card:checked ~ .switcher-card .third-label {
+    background-color: #02897A;
+}
+#first-card:checked ~ .block-7__cards .cardl-1,
+#second-card:checked ~ .block-7__cards .cardl-2,
+#third-card:checked ~ .block-7__cards .cardl-3 {
+    color: #02897A;
+}
+#first-card:checked ~ .block-7__cards .card-l-1,
+#second-card:checked ~ .block-7__cards .card-l-2,
+#third-card:checked ~ .block-7__cards .card-l-3 {
+    width: 38%;
+}
+/* card-label */
+.card-label {
+    display: flex;
+    flex-direction: column;
+    width: 28%;
+    border: 1px solid #DEDEDE;
+    border-radius: 8px;
+    transition: all 0.6s;
+}
+.card-label img {
+    width: 100%;
+}
+.card-info {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+}
+.card-info {
+    padding: 24px 30px 40px 24px;
+}
+.card-info__descr {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 28px;
+}
+.card-info__name {
+    font-weight: 700;
+    line-height: 40px;
+    font-size: 24px;
+}
