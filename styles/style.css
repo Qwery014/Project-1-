@@ -7,11 +7,17 @@
 html {
     font-size: 16px;
 }
+.block-6,
+.block-7 {
+    font-family: 'Poppins', sans-serif;
+    color: #22343D;
+}
 .block-6 {
     background: no-repeat top / 100% auto url("../assets/img/Bg_half-circle.png");
-    font-family: 'Poppins', sans-serif;
     text-align: center;
-    color: #22343D;
+}
+.block-7 {
+    text-align: left;
 }
 .container {
     width: 90%;
@@ -19,12 +25,14 @@ html {
     margin: 0px auto;
     padding: 10px;
 }
-.block-6__header {
+.block-6__header,
+.block-7__header {
     font-size: 2rem;
     padding: 50px 0px 16px;
     font-weight: 700;
 }
-.block-6__sub-header {
+.block-6__sub-header,
+.block-7__sub-header {
     white-space: pre-line;
     line-height: 26px;
     font-weight: 500;
@@ -69,6 +77,8 @@ html {
 /* Block 7 */
 .block-7__cards {
     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 /*  */
 #first-card,
@@ -86,5 +96,26 @@ html {
     height: 20px;
     display: block;
     border-radius: 100%;
+    background-color: #979797;
+}
+#first-card:checked ~ .switcher-card .first-label,
+#second-card:checked ~ .switcher-card .second-label,
+#third-card:checked ~ .switcher-card .third-label {
     background-color: #02897A;
+}
+#first-card:checked ~ #test .card-info__name,
+#second-card:checked ~ .card-label .card-info__name,
+#third-card:checked ~ .card-label .card-info__name {
+    color: #02897A;
+}
+/* 02897A */
+.card-label {
+    display: flex;
+    flex-direction: column;
+    width: 33.33%;
+}
+.card-info {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
 }
