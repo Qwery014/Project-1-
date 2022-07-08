@@ -5,14 +5,6 @@
   font-family: "Poppins", sans-serif;
 }
 
-a {
-  text-decoration: none;
-}
-
-ul {
-  list-style: none;
-}
-
 .container {
   max-width: 1110px;
   width: 90%;
@@ -28,6 +20,12 @@ ul {
   margin: 0 auto;
   background-color: #02897a;
   border-radius: 32px;
+  transition: 0.3s;
+}
+
+.join_100:hover {
+  border-radius: 32px;
+  box-shadow: -2px 1px 10px rgba(96, 96, 96, 0.589);
 }
 
 .join_100__right h3 {
@@ -49,6 +47,7 @@ ul {
 .join_100__right button a {
   color: #02897a;
   font-size: 20px;
+  text-decoration: none;
 }
 
 /* ! footer */
@@ -68,6 +67,10 @@ ul {
   flex-direction: row;
   justify-content: space-between;
   margin-bottom: 20px;
+}
+
+.contacts_upper a {
+  text-decoration: none;
 }
 
 .contacts_upper a p {
@@ -90,10 +93,15 @@ ul {
   margin-bottom: 8px;
 }
 
+.resource ul {
+  list-style: none;
+}
+
 .resource ul li a {
   font-size: 16px;
   color: #22343d;
   font-weight: 400;
+  text-decoration: none;
 }
 
 .resource ul li {
@@ -108,10 +116,15 @@ ul {
   margin-bottom: 8px;
 }
 
+.stuff ul {
+  list-style: none;
+}
+
 .stuff ul li a {
   font-size: 16px;
   color: #22343d;
   font-weight: 400;
+  text-decoration: none;
 }
 
 .stuff ul li {
@@ -147,12 +160,18 @@ ul {
   background-color: #02897a;
   border: 1px solid #02897a;
   border-radius: 4px;
+  transition: 0.3s;
 }
 
 .form button a {
   font-size: 16px;
   font-weight: 700;
   color: #ffffff;
+  text-decoration: none;
+}
+
+.form button:hover {
+  box-shadow: -2px 1px 5px rgba(96, 96, 96, 0.589);
 }
 
 /* ! */
