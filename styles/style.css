@@ -36,7 +36,8 @@
 }
 
 .join_100__right button {
-  width: 150px;
+  max-width: 150px;
+  width: 100%;
   height: 50px;
   border: 1px solid #02897a;
   border-radius: 8px;
@@ -48,6 +49,10 @@
   color: #02897a;
   font-size: 20px;
   text-decoration: none;
+}
+
+.join_100__right {
+  width: 100%;
 }
 
 /* ! footer */
@@ -104,6 +109,10 @@
   text-decoration: none;
 }
 
+.resource ul li a:hover {
+  color: #4d8dff;
+}
+
 .resource ul li {
   margin-bottom: 8px;
 }
@@ -125,6 +134,10 @@
   color: #22343d;
   font-weight: 400;
   text-decoration: none;
+}
+
+.stuff ul li a:hover {
+  color: #4d8dff;
 }
 
 .stuff ul li {
@@ -152,6 +165,13 @@
   margin-bottom: 21px;
   border: 1px solid #bcd0e5;
   border-radius: 4px;
+}
+
+.form input {
+  outline: none;
+  padding-left: 30px;
+  padding-right: 20px;
+  box-shadow: 0 1px 0 0 rgba(160, 158, 158, 0.589);
 }
 
 .form button {
@@ -186,4 +206,72 @@
   font-size: 16px;
   font-weight: 400;
   color: #22343d;
+}
+
+@media screen and (max-width: 800px) {
+  .footer_up {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .form {
+    display: flex;
+    margin: 0 auto;
+    margin-top: 50px;
+  }
+  .form p {
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 30px;
+  }
+  .form button {
+    margin: 0 auto;
+  }
+}
+
+@media screen and (max-width: 730px) {
+  .join_100 {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .join_100 .join_100__right h3 {
+    text-align: center;
+    margin: 50px 20px 40px 20px;
+  }
+  .join_100__right button {
+    margin: 0 200px 0 200px;
+  }
+  .join_100 .join_100__right {
+    margin: 0 auto;
+  }
+  .join_100 .join_100__left {
+    margin: 0 auto;
+    margin-top: 50px;
+  }
+}
+@media screen and (max-width: 570px) {
+  .join_100 .join_100__right h3 {
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  .join_100__right button {
+    margin: 0 150px 0 160px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .join_100 .join_100__right h3 {
+    width: 70%;
+    margin: 0 auto;
+    margin-top: 20px;
+    margin-bottom: 30px;
+  }
+  .join_100__right button {
+    margin: 0 140px 0 140px;
+  }
+}
+@media screen and (max-width: 450px) {
+  .join_100 .join_100__left img {
+    margin: 0 auto;
+  }
 }
