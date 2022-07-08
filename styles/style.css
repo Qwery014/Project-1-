@@ -68,7 +68,7 @@ header {
 
 /* section 1 start */
 .section1 {
-  position: relative;
+  /* position: relative; */
   width: 100%;
   height: 100%;
   flex-wrap: wrap;
@@ -119,13 +119,224 @@ header {
   width: 100%;
   height: 100%;
   flex-wrap: wrap;
+  background: no-repeat bottom / 100% auto url("../assets/img/Bg.png");
+  padding-bottom: 50px;
 }
 .section2_product {
-  display: flex;
+  /* display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: center; */
   width: 100%;
   flex-wrap: wrap;
 }
+.section2 h1 {
+  margin-top: 90px;
+}
+.products {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 55px;
+}
+.products h3 {
+  font-weight: 600;
+  font-size: 22px;
+  color: #22343d;
+  margin-top: 20px;
+}
+.products p {
+  font-weight: 400;
+  font-size: 16px;
+  color: #22343d;
+  margin-top: 20px;
+}
+button {
+  margin: 0 auto;
+  display: block;
+}
+.section2_product-btn {
+  border: none;
+  background: #02897a;
+  border-radius: 4px;
+  padding: 15px 25px;
+  margin-top: 35px;
+}
+.section2_product-btn a {
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 16px;
+  color: #ffffff;
+}
 /* section 2 end */
+
+/* Адаптивка старт*/
+/* burger start */
+#burger,
+[for="burger"] {
+  display: none;
+}
+@media screen and (max-width: 1130px) {
+  .section1_inner .right img {
+    width: 500px;
+    height: 400px;
+  }
+}
+@media screen and (max-width: 1015px) {
+  .section1_inner .right img {
+    width: 400px;
+    height: 300px;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .navbar {
+    height: 90px;
+  }
+  [for="burger"] {
+    display: block;
+    position: fixed;
+    width: 30px;
+    text-align: center;
+    right: 80px;
+    top: 35px;
+  }
+  [for="burger"]::before {
+    content: "☰";
+    color: #173a56;
+    font-weight: 700;
+    font-size: 30px;
+  }
+  nav {
+    display: none;
+    position: fixed;
+    top: 0;
+    background-color: #173a56;
+    width: 80%;
+    border-radius: 30px;
+  }
+  .navbar nav ul li a {
+    padding: 10px 150px;
+    color: white;
+  }
+  ul {
+    flex-direction: column;
+    align-content: space-around;
+    /* height: 00px; */
+  }
+  #burger:checked + label + nav {
+    display: block;
+  }
+  #burger:checked + [for="burger"]::before {
+    content: "⛌";
+    position: fixed;
+    right: 80px;
+  }
+  .product {
+    margin-top: 10px;
+    background-color: aqua;
+    border-radius: 320px 30px;
+  }
+  .customers {
+    background-color: Crimson;
+    border-radius: 320px 30px;
+    margin-top: 15px;
+  }
+  .pricing {
+    background-color: orange;
+    border-radius: 30px 320px;
+    margin-top: 15px;
+  }
+  .resources {
+    background-color: Magenta;
+    border-radius: 30px 300px;
+    margin-top: 15px;
+  }
+  .btn2 {
+    margin-top: 35px;
+  }
+  .btn {
+    margin-top: 25px;
+  }
+  .btn_in {
+    background-color: #fff;
+    border-radius: 30px;
+    padding: 10px 300px;
+  }
+  .btn_up {
+    border-radius: 30px;
+    padding: 10px 300px;
+  }
+  .li_a-img {
+    display: none;
+  }
+  @media screen and (max-width: 904px) {
+    .section1_inner .right img {
+      width: 300px;
+      height: 200px;
+    }
+    .btn_in {
+      padding: 10px 250px;
+    }
+    .btn_up {
+      padding: 10px 250px;
+    }
+    .products {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    .product2 {
+      margin: 0 60px;
+      margin-bottom: 20px;
+    }
+  }
+  @media screen and (max-width: 770px) {
+    .products {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    [for="burger"] {
+      right: 60px;
+    }
+    #burger:checked + [for="burger"]::before {
+      content: "⛌";
+      position: fixed;
+      right: 60px;
+    }
+    .product4 {
+      margin: 0 60px;
+    }
+    .section2_product-btn {
+      padding: 10px 20px;
+    }
+  }
+  .section1_inner .left .title {
+    font-size: 26px;
+  }
+  .section1_inner .left .description {
+    font-size: 14px;
+  }
+  .section2_product h1 {
+    font-size: 26px;
+  }
+  .left .play .section1_btn {
+    padding: 7px 15px;
+  }
+  .left .play .section1_reproduce {
+    font-size: 14px;
+    font-weight: 400;
+    width: 130px;
+  }
+  .section1_inner .right img {
+    width: 250px;
+    height: 230px;
+  }
+  .btn_in {
+    padding: 10px 200px;
+  }
+  .btn_up {
+    padding: 10px 205px;
+  }
+}
+/* Адаптивка конец */
 /* Bekmyrza end */
