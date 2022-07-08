@@ -298,6 +298,7 @@ button {
     }
     .product1 {
       padding: 0 30px;
+      margin-bottom: 40px;
     }
     .product2 {
       padding: 0 30px;
@@ -316,6 +317,7 @@ button {
       display: flex;
       flex-wrap: wrap;
       justify-content: center;
+      text-align: center;
     }
     [for="burger"] {
       right: 60px;
@@ -363,25 +365,50 @@ button {
       flex-wrap: nowrap;
       flex-direction: column-reverse;
     }
+    .section1 .section1_inner .left {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
     .section2_product h1 {
-      width: 365px;
+      text-align: center;
     }
   }
   @media screen and (max-width: 500px) {
-    .nav .product {
-      padding: 10px 123px;
+    #burger:checked + [for="burger"]::before {
+      content: "⛌";
+      position: fixed;
+      right: 35px;
     }
-    .customers {
-      padding: 10px 100px;
+    .navbar .logo a {
+      align-items: center;
+      font-size: 20px;
     }
-    .pricing {
-      padding: 10px 100px;
+    .navbar .logo img {
+      width: 45px;
+    }
+    .navbar nav ul li a {
+      padding: 10px 80px;
     }
     .btn_in {
       padding: 10px 100px;
     }
     .btn_up {
       padding: 10px 100px;
+    }
+    /* .products p {
+      text-align: center;
+    } */
+  }
+  @media screen and (max-width: 330px) {
+    #burger:checked + [for="burger"]::before {
+      content: "⛌";
+      position: fixed;
+      right: 30px;
+    }
+    .navbar nav ul li a {
+      padding: 10px 60px;
     }
   }
 }
