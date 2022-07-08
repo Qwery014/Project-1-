@@ -59,7 +59,7 @@ html {
     padding: 15px 25px;
     background-color: #FFF;
     border-radius: 30px;
-    box-shadow: 0px 2px 8px #56759210;
+    box-shadow: 0px 4px 8px #5675927d;
 }
 
 .block-6__contact-button {
@@ -78,7 +78,8 @@ html {
 .block-7__cards {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-between;
+    margin: 32px 0px 50px;
 }
 /*  */
 #first-card,
@@ -103,19 +104,43 @@ html {
 #third-card:checked ~ .switcher-card .third-label {
     background-color: #02897A;
 }
-#first-card:checked ~ #test .card-info__name,
-#second-card:checked ~ .card-label .card-info__name,
-#third-card:checked ~ .card-label .card-info__name {
+#first-card:checked ~ .block-7__cards .cardl-1,
+#second-card:checked ~ .block-7__cards .cardl-2,
+#third-card:checked ~ .block-7__cards .cardl-3 {
     color: #02897A;
 }
-/* 02897A */
+#first-card:checked ~ .block-7__cards .card-l-1,
+#second-card:checked ~ .block-7__cards .card-l-2,
+#third-card:checked ~ .block-7__cards .card-l-3 {
+    width: 38%;
+}
+/* card-label */
 .card-label {
     display: flex;
     flex-direction: column;
-    width: 33.33%;
+    width: 28%;
+    border: 1px solid #DEDEDE;
+    border-radius: 8px;
+    transition: all 0.6s;
+}
+.card-label img {
+    width: 100%;
 }
 .card-info {
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
+}
+.card-info {
+    padding: 24px 30px 40px 24px;
+}
+.card-info__descr {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 28px;
+}
+.card-info__name {
+    font-weight: 700;
+    line-height: 40px;
+    font-size: 24px;
 }
