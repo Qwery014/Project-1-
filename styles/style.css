@@ -686,4 +686,71 @@ h5 {
     line-height: 40px;
     font-size: 24px;
 }
+/* Adaptive */
+@media screen and ( max-width: 950px ) {
+    .block-6_comments {
+        flex-direction: column;
+        align-items: center;
+        padding: 0;
+    }
+    .block-6__comment {
+        text-align: center;
+        justify-content: center;
+        width: 100%;
+        padding: 20px 0px;
+    }
+    .last-comments .block-6__comment {
+        flex-direction: row-reverse;
+    }
+    .comment-empty {
+        display: block;
+    }
+    /* Block 7 */
+    .card-label {
+        border: none;
+    }
+    #first-card:checked ~ .block-7__cards .card-l-1,
+    #second-card:checked ~ .block-7__cards .card-l-2,
+    #third-card:checked ~ .block-7__cards .card-l-3,
+    .card-label {
+        width: 55%;
+    }
+    .block-7__cards {
+        flex-direction: column;
+        align-items: center;
+    }
+    .block-7 {
+        margin-bottom: 0px;
+    }
+    .switcher-card label {
+        display: none;
+    }
+    .block-7__header,
+    .block-7__sub-header {
+        text-align: center;
+    }
+}
+
+@media screen and ( max-width: 650px ) {
+    .comment-empty {
+        display: none;
+    }
+    #first-card:checked ~ .block-7__cards .card-l-1,
+    #second-card:checked ~ .block-7__cards .card-l-2,
+    #third-card:checked ~ .block-7__cards .card-l-3,
+    .card-label {
+        width: 100%;
+    }
+    .block-6__sub-header,
+    .block-7__sub-header {
+        white-space: normal;
+    }
+    .block-7 {
+        margin-bottom: 10px;
+    }
+    .card-info {
+        padding: 24px 0px 40px 0px;
+    }
+}
+
 /* Абдумалик end */
