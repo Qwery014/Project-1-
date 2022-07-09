@@ -208,6 +208,7 @@
   color: #22343d;
 }
 
+/* ! адаптивка */
 @media screen and (max-width: 800px) {
   .footer_up {
     display: flex;
