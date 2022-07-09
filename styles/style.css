@@ -274,4 +274,53 @@
   .join_100 .join_100__left img {
     margin: 0 auto;
   }
+  .join_100__right button {
+    margin: 0 130px 0 120px;
+  }
+  .join_100__left img {
+    width: 98%;
+  }
+  .footer_up {
+    display: flex;
+    flex-direction: column;
+  }
+  .contacts_upper {
+    display: flex;
+    justify-content: center;
+  }
+  .contacts_sub {
+    display: flex;
+    justify-content: center;
+  }
+  .contacts_sub img {
+    margin-right: 10px;
+  }
+  .resource {
+    margin: 0 auto;
+    margin-top: 30px;
+  }
+  .resource p {
+    text-align: center;
+  }
+  .resource ul {
+    text-align: center;
+  }
+  .stuff {
+    margin: 0 auto;
+    margin-top: 30px;
+  }
+  .stuff p {
+    text-align: center;
+  }
+  .stuff ul {
+    text-align: center;
+  }
+}
+@media screen and (max-width: 411px) {
+  .join_100__right button {
+    margin: 0 100px 0 100px;
+  }
+  .footer_down p {
+    text-align: center;
+  }
 }
